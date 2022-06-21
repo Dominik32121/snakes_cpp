@@ -1,7 +1,12 @@
 #include <iostream>
 
+#include "../grid/grid.hpp"
+
+
 int main()
 {
-  std::cout << "Hello World" << std::endl;
+  Grid a(10,10);
+  a.update();
+
   return 0;
 }
