@@ -1,0 +1,23 @@
+/*
+logic for the code:
+1.	The structure of a snake: An array can be used to save all of the snake's
+    current positions or in other words, store all the nodes with a active
+    snake part into the array. Obviously every epog this could be updated. The
+    movement of the snake is very simple, you can just move every snake node
+    off of the movement of the snake node in front of it, and delay it by one
+    epog. However the code will not delay a still moving snake node. The way to
+    get the order of the snake nodes is to number them from 0 to snake_size and
+    include a snake num into the node values.
+
+2.	Collision detection between two or more snakes: If any node is being changed
+    more than once to a snake then it can be detected as a collision as no one 
+    snake could change a node simultaneously unless colliding with itself or
+    another snake (I don't know if no self collisions is a rule or not)
+
+
+3.	Wrap-around: this can be done with modulo and if say the grid is 5x5 and
+    the snake's head is at a theoretical position of 6,0 then you can do
+    6 % grid_size - 1
+
+
+*/
