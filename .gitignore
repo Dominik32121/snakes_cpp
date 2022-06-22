@@ -1,2 +1,3 @@
 bin/output
 obj/*.o
+src/logic
